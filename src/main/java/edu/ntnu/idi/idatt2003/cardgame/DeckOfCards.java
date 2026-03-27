@@ -1,4 +1,4 @@
-package no.ntnu.cardgame;
+package edu.ntnu.idi.idatt2003.cardgame;
 
 import java.util.ArrayList;
 import java.util.List;
