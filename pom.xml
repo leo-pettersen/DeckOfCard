@@ -57,7 +57,7 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <configuration>
-                    <mainClass>no.ntnu.cardgame/no.ntnu.cardgame.CardGameApp</mainClass>
+                    <mainClass>edu.ntnu.idi.idatt2003.cardgame/edu.ntnu.idi.idatt2003.cardgame.CardGameApp</mainClass>
                 </configuration>
             </plugin>
 
