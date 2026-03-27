@@ -8,9 +8,6 @@ import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * Unit tests for {@link DeckOfCards}.
- */
 class DeckOfCardsTest {
 
     private DeckOfCards deck;

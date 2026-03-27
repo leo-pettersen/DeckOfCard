@@ -16,19 +16,6 @@ import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
 import javafx.stage.Stage;
 
-/**
- * JavaFX application for the card game (Oppgave 4 & 5).
- *
- * <p>The GUI contains:
- * <ul>
- *   <li>A card display area showing the current hand</li>
- *   <li>A "Deal hand" button – deals 5 random cards</li>
- *   <li>A "Check hand" button – runs stream analysis on the hand</li>
- *   <li>Read-only text fields showing: sum of faces, hearts cards, flush, queen of spades</li>
- * </ul>
- *
- * <p>No FXML is used; the entire UI is built in code.
- */
 public class CardGameApp extends Application {
 
     // -------------------------------------------------------------------------

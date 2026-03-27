@@ -6,15 +6,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-/**
- * Unit tests for {@link HandOfCards} – covers all Oppgave 5 stream methods.
- */
 class HandOfCardsTest {
-
-    // -------------------------------------------------------------------------
-    // sumOfFaces
-    // -------------------------------------------------------------------------
-
     @Test
     void sumOfFacesIsCorrect() {
         HandOfCards hand = handOf('H', 1, 'S', 2, 'D', 3, 'C', 4, 'H', 5);
@@ -27,10 +19,6 @@ class HandOfCardsTest {
         assertEquals(13, hand.sumOfFaces());
     }
 
-    // -------------------------------------------------------------------------
-    // heartsAsString
-    // -------------------------------------------------------------------------
-
     @Test
     void heartsStringFormattedCorrectly() {
         HandOfCards hand = new HandOfCards(List.of(
@@ -39,7 +27,6 @@ class HandOfCardsTest {
                 new PlayingCard('H', 9),
                 new PlayingCard('H', 1)
         ));
-        // Order must match insertion order
         assertEquals("H12 H9 H1", hand.heartsAsString());
     }
 
@@ -62,10 +49,6 @@ class HandOfCardsTest {
         assertEquals("H1 H2 H3", hand.heartsAsString());
     }
 
-    // -------------------------------------------------------------------------
-    // hasQueenOfSpades
-    // -------------------------------------------------------------------------
-
     @Test
     void queenOfSpadesDetected() {
         HandOfCards hand = handOf('S', 12, 'H', 7, 'D', 3, 'C', 5, 'S', 1);
@@ -83,10 +66,6 @@ class HandOfCardsTest {
         HandOfCards hand = handOf('H', 1, 'D', 2, 'C', 3, 'S', 4, 'H', 5);
         assertFalse(hand.hasQueenOfSpades());
     }
-
-    // -------------------------------------------------------------------------
-    // isFlush
-    // -------------------------------------------------------------------------
 
     @Test
     void fiveHeartsIsFlush() {
@@ -142,10 +121,6 @@ class HandOfCardsTest {
         assertFalse(hand.isFlush());
     }
 
-    // -------------------------------------------------------------------------
-    // toString
-    // -------------------------------------------------------------------------
-
     @Test
     void toStringSpaceSeparated() {
         HandOfCards hand = new HandOfCards(List.of(
@@ -155,11 +130,6 @@ class HandOfCardsTest {
         assertEquals("H4 S1", hand.toString());
     }
 
-    // -------------------------------------------------------------------------
-    // Helper
-    // -------------------------------------------------------------------------
-
-    /** Convenience: build a hand from alternating suit/face pairs. */
     private HandOfCards handOf(Object... args) {
         List<PlayingCard> cards = new java.util.ArrayList<>();
         for (int i = 0; i < args.length; i += 2) {
